@@ -1,9 +1,10 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
+import userRouter from './routes/UserRoutes';
+import groupRouter from './routes/GroupRoutes';
 
-const route = Router();
+const router = Router();
 
-route.get('/', (req: Request, res: Response) => {
-  res.json({ message: 'hello world with Typescript' });
-});
+router.use(userRouter);
+router.use(groupRouter);
 
-export default route;
+export default router;

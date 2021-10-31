@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2021",
+    "target": "es2017",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "removeComments": true,
@@ -12,8 +12,8 @@
       "@controllers/*": [
         "./src/controllers/*"
       ],
-      "@models/*": [
-        "./src/models/*"
+      "@services/*": [
+        "src/useCases/*"
       ],
     },
     "esModuleInterop": true,
